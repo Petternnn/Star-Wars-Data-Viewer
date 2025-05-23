@@ -1,0 +1,81 @@
+/* Reset / Base styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: sans-serif;
+  }
+  
+  /* Container for sidebar + main */
+  .container {
+    display: flex;
+    min-height: 100vh; /* full viewport height */
+  }
+  header {
+    color: #222222;
+    padding: 4rem;
+    text-align: center;
+    width: 100%;;
+  }
+  
+  /* Sidebar styling */
+  .sidebar {
+    flex: 0 0 200px; 
+    background-color: #222;
+    color: #fff;
+    padding: 1rem;
+  }
+  .sidebar h2 {
+    margin-bottom: 1rem;
+  }
+  .sidebar ul {
+    list-style: none;
+  }
+  .sidebar li {
+    margin-bottom: 0.5rem;
+  }
+  .sidebar-btn {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  .sidebar-btn:hover {
+    background-color: #555;
+  }
+  
+  /* Main content area */
+  .main-content {
+    flex: 1 1 auto;
+    padding: 1rem;
+    background-color: #f2f2f2;
+
+  }
+  
+  /* Simple card grid style */
+  .content-area {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .card {
+    background: #fff;
+    border-radius: 8px;
+    width: 200px;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  .card img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+  }
+  .card h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+  }
+  

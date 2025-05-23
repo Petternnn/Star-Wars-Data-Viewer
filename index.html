@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Star Wars Viewer</title>
+    <link rel="stylesheet" href="/src/css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <h2>Menu</h2>
+        <ul>
+          <li>
+            <button class="sidebar-btn" data-category="films">Films</button>
+          </li>
+          <li>
+            <button class="sidebar-btn" data-category="people">People</button>
+          </li>
+          <li>
+            <button class="sidebar-btn" data-category="planets">Planets</button>
+          </li>
+          <li>
+            <button class="sidebar-btn" data-category="vehicles">Vehicles</button>
+          </li>
+        </ul>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="main-content">
+        <header>
+          <h1>Star Wars Data Viewer</h1>
+        </header>
+        <section id="content" class="content-area">
+          <!-- Data will be rendered here dynamically -->
+          <p>Choose a category from the sidebar.</p>
+        </section>
+
+    
+        <main>
+          <!-- Cards will be appended here -->
+          <div id="cardList" class="cards-container"></div>
+        </main>
+      </main>
+    </div>
+
+    <!-- Vite dev/production build injection -->
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
+</html>
